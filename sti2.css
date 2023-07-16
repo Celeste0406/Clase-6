@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+ }
+ 
+ body{ 
+    font-size: 2%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: blue;
+    height: 100px;
+
+}
+
+nav {
+    background-color: red;
+    height: 70px;
+    
+}
+
+main {
+    background-color: orange;
+    flex-grow: 3;
+}
+
+aside {
+    background-color: greenyellow;
+    height: 100px;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: green;
+    height: 50px;
+}
+
+@media(min-width: 500px) {
+    .contenedor {
+      flex-direction: row;
+    }
+
+    main {
+        flex-grow: 3;
+    }
+
+    aside {
+        flex-grow: 1;
+        height: 100%;
+    }
+}
+
